@@ -6,12 +6,8 @@ html{
     width: 100%;
 }
 
-.facility{
-    padding: 0px;
-    background: #FFFFFF;
-}
 
-.facility_panel{
+.facility_panel, .dept_cont{
     width: 80%;
     text-align: justify;
 }
@@ -42,4 +38,27 @@ html{
 .bottom{
     position: absolute;
     bottom: 0px;
+}
+a{text-decoration: none;}
+
+a .breadcrumb:hover:before{width: 0%;}
+
+.department{
+    display: flex;
+}
+.dept_nav{
+    border-top: 10px double #FF9900;
+    width: 90%;
+    float: right;
+    overflow-y: visible;
+    vertical-align: top;
+    position: sticky;
+    top: 80px;
+}
+.dept_cont{
+    width: 100%;
+    float: left;
+    text-align: justify;
+    display: table-cell;
+    vertical-align: top;
 }
