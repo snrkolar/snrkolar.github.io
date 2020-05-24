@@ -38,3 +38,8 @@ html{
         top: -20vh;
     }
 }
+
+.bottom{
+    position: absolute;
+    bottom: 0px;
+}
