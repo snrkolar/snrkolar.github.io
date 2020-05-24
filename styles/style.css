@@ -1,0 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
+.services_card{
+    padding: 0px;
+    width: 100%;
+}
+
+.facility{
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+.facility_panel{
+    width: 80%;
+    text-align: justify;
+}
+.facility_panel h6{text-align: center;}
+.facility_image{
+    margin: 0px;
+}
+.cont{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.top{
+    text-decoration: none;
+}
+.top:hover::before{
+    width: 0%;
+}
+
+
+
+@media (min-width: 481px){
+    .facility_panel{
+        position: relative;
+        top: -20vh;
+    }
+}
