@@ -12,7 +12,7 @@
 <body class="primary_white">
     <div id="body">
         <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <button class="left">LOGO</button>
+            <img class="left icon" src="./static/icons/fb.png">
 
             <a class="pivot_button right" href="#footer">Contact</a>
             <a class="pivot_button right" href="#facilities">Facilities</a>
@@ -21,6 +21,12 @@
             <a class="pivot_button right" href="./aboutus.html">About</a>
             <a class="pivot_button right" href="./index.html">Home</a>
         </div>
+        <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
+            <img class="left icon" src="./static/icons/fb.png">
+
+            <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
+        </div>
+
         <span id="top"></span>
         <div class="column large12 medium12 small12" style="background: url('./static/images/prlxbg.jpg'); width: 100%; height: 100vh; background-attachment: fixed;">
             <h2 style="color: #FFF; margin-top: 40vh; font-weight: bold;" class="ta_center">S.N.R. District Hospital, Kolar</h2>
@@ -141,11 +147,30 @@
             <a href="#top" class="top"><button class="frost_container primary_inverted" onmouseover="frosting();">
                 <span class="frost">Back to Top</span>
             </button></a>
-            <br /><hr>
-            <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            <br /><hr class="small0">
+            <p class="ta_left small0">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
             <br />
         </div> 
         
+    </div>
+
+    <div class="sidepanel_container" id="side1">
+        <div class="sidepanel_content zi3 right" id="modct1">
+            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
+            <br /><br /><br /><br />
+            <div class="page_container">
+                <a href="./index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
+                <a href="./aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                <a href="./departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
+                <a href="#services"><div class="large12 panel_item" onclick="closeside1();">Services</div></a>
+                <a href="#facilities"><div class="large12 panel_item" onclick="closeside1();">Facilities</div></a>
+                <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
+            </div>
+            <div class="bottom">
+                <hr>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
