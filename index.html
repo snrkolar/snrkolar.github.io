@@ -11,8 +11,8 @@
     <link href="./styles/style.css" type="text/css" rel="stylesheet"/>
     <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
-    <div id="body">
+<body onload="PageLoad();">
+    <div id="body" style="filter: blur(25px);">
         <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
             <img class="left icon" src="./static/icons/fb.png">
 
@@ -230,8 +230,16 @@
             </div>
         </div>
     </div>
+
+    <div id="loadScreen" class="modal_container" style="display: block; background: #2e2e2eee;">
+        <div class="page_container">
+            <div class="indeterminate_progress_bar" style="position: fixed; top: 50%; width: 50%; margin-left: 15%;"></div>
+        </div>
+    </div>
+
 </body>
 </html>
 
 
 <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+<script src="./scripts/loadPage.js"></script>
