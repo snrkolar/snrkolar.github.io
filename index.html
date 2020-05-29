@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/SmoothScroll.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.N.R. District Hospital, Kolar</title>
@@ -9,8 +11,8 @@
     <link href="./styles/style.css" type="text/css" rel="stylesheet"/>
     <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
-    <div id="body">
+<body onload="PageLoad();">
+    <div id="body" style="filter: blur(25px);">
         <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
             <img class="left icon" src="./static/icons/fb.png">
 
@@ -68,8 +70,10 @@
                 </div><br /><br />
             </div>
         </div>
+
+<!--For Dektop View of Facilities-->
         <p id="facilities"></p>
-        <div class="page_container">
+        <div class="page_container small0">
             <h4 class="ta_center" style="margin-top: 10vh;">Our Facilities</h4>
             <p class="ta_center">Cutting Edge Quality</p><br />
             <div class="facility zi2 primary_white">
@@ -117,7 +121,61 @@
 
             </div>
         </div>
+
+<!--For Phone View of Facilities-->
+            <div class="page_container large0 medium0">
+                <h4 class="ta_center" style="margin-top: 10vh;">Our Facilities</h4>
+                <p class="ta_center">Cutting Edge Quality</p><br />
+                <div class="facility zi2 primary_white">
+    
+                    <div class="column large4 medium6 small12">
+                        <div class="facility_panel center">
+                            <h6>Child Care</h6>
+                            <p>Text Describing Facility 1
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti earum, quasi exercitationem illo praesentium temporibus! Iste pariatur earum architecto maxime exercitationem aut, et recusandae, laudantium quaerat quidem aperiam similique sed?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large8 medium8 small12">
+                        <div class="facility_image">
+                            <img src="./static/images/prlxbg.jpg">
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="column large4 medium6 small12">
+                        <div class="facility_panel center">
+                            <h6>Facility 2</h6>
+                            <p>Text Describing Facility 2
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti earum, quasi exercitationem illo praesentium temporibus! Iste pariatur earum architecto maxime exercitationem aut, et recusandae, laudantium quaerat quidem aperiam similique sed?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large8 medium8 small12">
+                        <div class="facility_image">
+                            <img src="./static/images/prlxbg.jpg">
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="column large4 medium6 small12">
+                        <div class="facility_panel center">
+                            <h6>Facility 3</h6>
+                            <p>Text Describing Facility 3
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti earum, quasi exercitationem illo praesentium temporibus! Iste pariatur earum architecto maxime exercitationem aut, et recusandae, laudantium quaerat quidem aperiam similique sed?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large8 medium8 small12">
+                        <div class="facility_image">
+                            <img src="./static/images/prlxbg.jpg">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
         <br /><br />
+
 
 <!--
             <div class="page_container">
@@ -172,10 +230,16 @@
             </div>
         </div>
     </div>
+
+    <div id="loadScreen" class="modal_container" style="display: block; background: #2e2e2eee;">
+        <div class="page_container">
+            <div class="indeterminate_progress_bar" style="position: fixed; top: 50%; width: 50%; margin-left: 15%;"></div>
+        </div>
+    </div>
+
 </body>
 </html>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./scripts/SmoothScroll.js"></script>
 <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+<script src="./scripts/loadPage.js"></script>
