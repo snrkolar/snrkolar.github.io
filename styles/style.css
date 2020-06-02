@@ -6,7 +6,9 @@ html{
     width: 100%;
 }
 
-
+.dept_content p{
+    font-family: 18px;
+}
 .facility_panel, .dept_cont{
     width: 80%;
     text-align: justify;
