@@ -10,7 +10,6 @@ html{
     font-family: 18px;
 }
 .facility_panel, .dept_cont{
-    width: 80%;
     text-align: justify;
 }
 .facility_panel h6{text-align: center;}
@@ -32,8 +31,9 @@ html{
 
 @media (min-width: 481px){
     .facility_panel{
+        width: 80%;
         position: relative;
-        top: 2vh;
+        top: 10vh;
     }
 }
 
@@ -64,3 +64,15 @@ a .breadcrumb:hover:before{width: 0%;}
     display: table-cell;
     vertical-align: top;
 }
+
+.facility_panel .newli{
+    background: transparent;
+    display: block;
+    padding: 6px;
+}
+.scheme{font-size: 24px;}
+
+.facility_panel li{font-size: 20px;}
+li{margin-left: -10%;}
+
+.hidden{display: none;}
