@@ -3,7 +3,9 @@ html{
 }
 .services_card{
     padding: 0px;
-    width: 100%;
+    width: 88%;
+    display: block;
+    margin: auto;
 }
 
 .dept_content p{
@@ -45,9 +47,6 @@ a{text-decoration: none;}
 
 a .breadcrumb:hover:before{width: 0%;}
 
-.department{
-    display: flex;
-}
 .dept_nav{
     border-top: 10px double #FF9900;
     width: 90%;
@@ -58,11 +57,12 @@ a .breadcrumb:hover:before{width: 0%;}
     top: 80px;
 }
 .dept_cont{
-    width: 100%;
+    width: 80%;
     float: left;
     text-align: justify;
     display: table-cell;
     vertical-align: top;
+    margin: 12px 8px;
 }
 
 .facility_panel .newli{
@@ -82,15 +82,15 @@ li{margin-left: -10%;}
 }
 
 .name_wrap{
-    background: #acacacaa;
+    background: #ccccccdd;
     width: 50vw;
     display: block;
     margin: 32vh auto;
     padding: 26px 16px;
     backdrop-filter: blur(6px) saturate(100%);
     border-radius: 12px;
-    box-shadow: 6px 6px 18px #fcfcfcac, -6px -6px 18px #fcfcfcac;
-    color: #fcfcfc;
+    box-shadow: 6px 6px 18px #acacacaa, -6px -6px 18px #acacacaa;
+    color: #1e1e1e;
 }
 
 @media (max-width: 481px){
