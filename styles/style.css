@@ -76,3 +76,32 @@ a .breadcrumb:hover:before{width: 0%;}
 li{margin-left: -10%;}
 
 .hidden{display: none;}
+
+.pivot_container .icon{
+    margin: 8px 12px;
+}
+
+.name_wrap{
+    background: #acacacaa;
+    width: 50vw;
+    display: block;
+    margin: 32vh auto;
+    padding: 26px 16px;
+    backdrop-filter: blur(6px) saturate(100%);
+    border-radius: 12px;
+    box-shadow: 6px 6px 18px #fcfcfcac, -6px -6px 18px #fcfcfcac;
+    color: #fcfcfc;
+}
+
+@media (max-width: 481px){
+    .name_wrap{
+        width: 80vw;
+    }
+}
+
+h1{font-size: 6vh;}
+h2{font-size: 5vh;}
+h3{font-size: 4.2vh;}
+h4{font-size: 4vh;}
+h5{font-size: 3.5vh;}
+h6{font-size: 3vh;}
