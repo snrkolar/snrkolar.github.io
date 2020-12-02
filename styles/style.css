@@ -29,6 +29,13 @@ html{
     width: 0%;
 }
 
+.fac_info{
+    padding: 6vh 12.5vh;
+}
+.fac_info p{
+    text-align: justify;
+}
+
 
 
 @media (min-width: 481px){
@@ -63,6 +70,14 @@ a .breadcrumb:hover:before{width: 0%;}
     display: table-cell;
     vertical-align: top;
     margin: 12px 8px;
+}
+.dept_cont h5{
+    background: #9eaeae;
+    color: #fcfcfc;
+    width: 100%;
+    padding: 10px 0px;
+    position: relative;
+    top: 10px;
 }
 
 .facility_panel .newli{
