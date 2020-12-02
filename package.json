@@ -1,0 +1,23 @@
+{
+  "name": "snrkolar.github.io",
+  "version": "1.0.0",
+  "description": "<h1>README</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivendrasaurav/snrkolar.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivendrasaurav/snrkolar.github.io/issues"
+  },
+  "homepage": "https://github.com/shivendrasaurav/snrkolar.github.io#readme",
+  "dependencies": {
+    "fdweb": "^1.0.7"
+  }
+}
