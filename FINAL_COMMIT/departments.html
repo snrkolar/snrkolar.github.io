@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/SmoothScroll.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.N.R. District Hospital, Kolar</title>
+    <link href="node_modules/fdweb/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent-icons.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body onload="PageLoad();">
+    <div id="body" style="filter: blur(25px);">
+        <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
+            <img class="left icon" src="./static/icons/logo.png">
+
+            <a class="pivot_button right" href="#footer">Contact</a>
+            <a class="pivot_button right" href="./departments.html">Departments</a>
+            <a class="pivot_button right" href="./aboutus.html">About</a>
+            <a class="pivot_button right" href="./index.html">Home</a>
+        </div>
+        <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
+            <img class="left icon" src="./static/icons/fb.png">
+
+            <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
+        </div>
+
+        <span id="top"></span>
+        <div class="page_container">
+
+            <h3>Departments</h3>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/dental.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/dental.png"/>
+                    <h5 class="ta_center">Dental</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/dermatology.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/dermatology.png"/>
+                    <h5 class="ta_center">Dermatology</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/ent.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/ent.png"/>
+                    <h5 class="ta_center">Ear Nose Throat</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/pediatrics.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/pediatrics.png"/>
+                    <h5 class="ta_center">Pediatrics</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/psychiatry.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/psychiatry.png"/>
+                    <h5 class="ta_center">Psychiatry</h5>
+                </div></a>
+            </div>
+
+
+        </div>
+    
+        <p  id="footer"></p>
+        <div class="footer primary_blue ta_center">
+            <div class="column large4 medium6 small12 page_container ta_left">
+                <h5>Get In Touch</h5><br />
+                <p><a href="#" class="cont">S.N.R. Hospital, Gowripete, Kolar, Karnataka 563101, India</a></p>
+                <p><a href="tel: " class="cont">Phone Number Goes Here</a></p>
+                <p><a href="mailto: hospitalsnr@gmail.com" class="cont">hospitalsnr@gmail.com</a></p>
+                <a href="https://www.facebook.com/"><img src="./static/icons/fb.png" class="icon"></a>
+                <a href="https://www.instagram.com/"><img src="./static/icons/ig.png" class="icon"></a>
+                <a href="https://youtu.be/"><img src="./static/icons/tw.png" class="icon"></a>
+            </div>
+            <div class="column large4 medium6 small12 page_container">
+                
+                <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=S.N.R%20Hospital%2C%20Gowripete%2C%20Kolar%2C%20Karnataka+(SNR%20District%20Hospital%2C%20Kolar)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="border: none; border-radius:10px; height: 25vh; width: 100%;" allowfullscreen="yes" class="zi3"></iframe>
+                 
+            </div>
+            <br /></br>
+            <a href="#top" class="top"><button class="frost_container primary_inverted" onmouseover="frosting();">
+                <span class="frost">Back to Top</span>
+            </button></a>
+            <br /><hr class="small0">
+            <p class="ta_left small0">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            <br />
+        </div> 
+        
+    </div>
+
+    <div class="sidepanel_container" id="side1">
+        <div class="sidepanel_content zi3 right" id="modct1">
+            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
+            <br /><br /><br /><br />
+            <div class="page_container">
+                <a href="./index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
+                <a href="./aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                <a href="./departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
+                <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
+            </div>
+            <div class="bottom">
+                <hr>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loadScreen" class="modal_container" style="display: block; background: #2e2e2eee;">
+        <div class="page_container">
+            <div class="indeterminate_progress_bar" style="position: fixed; top: 50%; width: 50%; margin-left: 15%;"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+<script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+<script src="./scripts/loadPage.js"></script>

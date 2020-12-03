@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.N.R. District Hospital, Kolar</title>
-    <link href="https://fluentdesignforweb.github.io/normalize.css" type="text/css" rel="stylesheet"/>
-    <link href="https://fluentdesignforweb.github.io/fluent.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent-icons.css" type="text/css" rel="stylesheet"/>
     <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
-    <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body onload="PageLoad();">
     <div id="body" style="filter: blur(25px);">
         <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <img class="left icon" src="../static/icons/fb.png">
+            <img class="left icon" src="../static/icons/logo.png">
 
             <a class="pivot_button right" href="#footer">Contact</a>
             <a class="pivot_button right" href="../departments.html">Departments</a>
@@ -22,48 +25,67 @@
             <a class="pivot_button right" href="../index.html">Home</a>
         </div>
         <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <img class="left icon" src="./static/icons/fb.png">
+            <img class="left icon" src="./static/icons/logo.png">
 
             <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
         </div>
 
         <span id="top"></span>
-        <div class="column large12 medium12 small12" style="background: url('../static/images/prlxbg.jpg'); width: 100%; height: 60vh; background-attachment: fixed; background-size: cover;">
-            <h2 style="color: #FFF; margin-top: 40vh; font-weight: bold;" class="ta_center">About Us</h2>
+        <div class="column large12 medium12 small12" style="background: url('../static/images/HomePage3.jpg'); width: 100%; height: 60vh; background-attachment: fixed; background-size: cover;">
+            <div class="name_wrap">
+                <h2 class="ta_center">About Us</h2>
+            </div>
         </div>
 
         <div class="page_container">
 
-            <ul class="breadcrumb_container">
-                <a href="./index.html"><li class="breadcrumb">Home</li></a>
-                <span class="breadcrumb_icon">&gt;</span>
-                <a href="#top"><li class="breadcrumb">About Us</li></a>
-            </ul>
             <div class="department">
                 <div class="column large4 medium4 small0">
                     <br /><br /><br />
                     <br />
                     <div class="dept_nav">
+                        <a href="#history"><div class="large12 panel_item" onclick="closeside1();">History</div></a>
                         <a href="#about"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
                         <a href="#vandm"><div class="large12 panel_item" onclick="closeside1();">Vision and Mission</div></a>
-                        <a href="#history"><div class="large12 panel_item" onclick="closeside1();">Our History</div></a>
-
                     </div>
                 </div>
                 <div class="column large8 medium8 small12">
                     <div class="dept_cont">
+                        <p id="history"></p>
+                        <br /><br /><br />
+                        <h6>History</h6>
+                        <p>
+
+                            <br/>
+                            Kolar is a District in the state Karnataka located with a Latitude 13.17 N longitude
+                            of 78.20 E, Being District Head Quarters Kolar consists of 5 Talukas Bangarpet
+                            ,KGF , Malur , Mulbagal ,Srinivaspura. Kolar District being Drought Land is Famous
+                            for growing Vegetables, Fruits especially Mangoes from Srinivaspura, Milk and Silk
+                            City of Karnataka.                             
+                            <br/><br/>
+                            In the Heart of Kolar District Lies the Most Famous and Oldest Hospital of Kolar
+                            District, Sri Narashima Raja District Hospital, which was built by Bhadoor Sri
+                            Krishna raja wadiyar in the year 1937 in an area of 16 Acres with a capacity of 100
+                            Beds. The Hospital was Built in complete Stones in those Days and still a
+                            Engineering Marvel till date with good Ventilation. 
+                            <br/><br/>
+                            Presently Kolar District Has a population of 18Lakhs and SNR District Hospital is
+                            the Major Territory care unit with 600beds capacity is Serving all cadre patients
+                            equally with good and quality Health care services around the clock.                             
+
+                        </p>
                         <p id="about"></p>
                         <br /><br /><br />
                         <h6>About Us</h6>
                         <p>
 
-                            <br>
+                            <br/>
                             In the Heart of Kolar District Lies the Most Famous and Oldest Hospital of Kolar
                             District, Sri Narashima Raja District Hospital, which was built by Bhadoor Sri
                             Krishna raja wadiyar in the year 1937 in an area of 16 Acres with a capacity of 100
                             Beds. The Hospital was Built in complete Stones in those Days and still a
                             Engineering Marvel till date with good Ventilation.
-                            <br>
+                            <br/><br/>
                             Presently Kolar District Has a population of 18Lakhs and SNR District Hospital is
                             the Major Territory care unit with 600beds capacity is Serving all cadre patients
                             equally with good and quality Health care services around the clock.
@@ -73,7 +95,15 @@
                         <br /><br /><br />
                         <h6>Vission and Mission</h6>
                         <p>
-                            Our vision is to provide the best medical facilities without bounds to everyone in need.
+                            <br/>
+                            To be distinguished place of study and practice that nurtures a diverse and an inclusive 
+                            community that is dedicated to mitigating pain and suffering and enhancing the health and 
+                            well being by striving for excellence in teaching and learning, patient care and leadership.
+                            <br/><br/>
+                            SNR Strives to create a new era of doctors who are trained to the highest levels of ability 
+                            and accomplishment, guided mightily by proffesional ethics, ready to serve and lead the 
+                            world by example. It will vigourously foster and protext the values and ethics of health 
+                            care and will serve all without prejudice of any kind.
                         </p>
                     
                     </div>
@@ -111,17 +141,16 @@
 
     <div class="sidepanel_container" id="side1">
         <div class="sidepanel_content zi3 right" id="modct1">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
-            <br /><br /><br /><br />
             <div class="page_container">
-                <a href="../index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
-                <a href="../aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
-                <a href="../departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
+                <a href="./index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
+                <a href="./aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                <a href="./departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
                 <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
             </div>
+            <button class="primary_red right mod_close_btn" style="height: 40px;" onclick="closeside1();">X</button>
             <div class="bottom">
                 <hr>
-                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; S.N.R. Hospital, Kolar 2020</p>
             </div>
         </div>
     </div>

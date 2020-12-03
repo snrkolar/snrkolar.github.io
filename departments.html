@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.N.R. District Hospital, Kolar</title>
-    <link href="https://fluentdesignforweb.github.io/normalize.css" type="text/css" rel="stylesheet"/>
-    <link href="https://fluentdesignforweb.github.io/fluent.css" type="text/css" rel="stylesheet"/>
-    <link href="./styles/style.css" type="text/css" rel="stylesheet"/>
-    <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent.css" type="text/css" rel="stylesheet"/>
+    <link href="node_modules/fdweb/fluent-icons.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body onload="PageLoad();">
     <div id="body" style="filter: blur(25px);">
         <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <img class="left icon" src="./static/icons/fb.png">
+            <img class="left icon" src="./static/icons/logo.png">
 
             <a class="pivot_button right" href="#footer">Contact</a>
             <a class="pivot_button right" href="./departments.html">Departments</a>
@@ -22,7 +25,7 @@
             <a class="pivot_button right" href="./index.html">Home</a>
         </div>
         <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <img class="left icon" src="./static/icons/fb.png">
+            <img class="left icon" src="./static/icons/logo.png">
 
             <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
         </div>
@@ -33,46 +36,40 @@
             <h3>Departments</h3>
 
             <div class="column large4 medium4 small12">
-                <a href="./departments/template.html"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/ent.jpg"/>
+                <a href="./departments/dental.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/dental.png"/>
+                    <h5 class="ta_center">Dental</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/dermatology.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/dermatology.png"/>
+                    <h5 class="ta_center">Dermatology</h5>
+                </div></a>
+            </div>
+
+            <div class="column large4 medium4 small12">
+                <a href="./departments/ent.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/ent.png"/>
                     <h5 class="ta_center">Ear Nose Throat</h5>
                 </div></a>
             </div>
 
             <div class="column large4 medium4 small12">
-                <a href="#"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/orthopedics.jpg"/>
-                    <h5 class="ta_center">Orthopedics</h5>
-                </div></a>
-            </div>
-
-            <div class="column large4 medium4 small12">
-                <a href="#"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/pediatrics.jpg"/>
+                <a href="./departments/pediatrics.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/pediatrics.png"/>
                     <h5 class="ta_center">Pediatrics</h5>
                 </div></a>
             </div>
 
             <div class="column large4 medium4 small12">
-                <a href="#"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/ent.jpg"/>
-                    <h5 class="ta_center">Ear Nose Throat</h5>
+                <a href="./departments/psychiatry.html"><div class="dept_cont dlevel2 center primary_white">
+                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/psychiatry.png"/>
+                    <h5 class="ta_center">Psychiatry</h5>
                 </div></a>
             </div>
 
-            <div class="column large4 medium4 small12">
-                <a href="#"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/orthopedics.jpg"/>
-                    <h5 class="ta_center">Orthopedics</h5>
-                </div></a>
-            </div>
-
-            <div class="column large4 medium4 small12">
-                <a href="#"><div class="dept_cont zi1 center primary_white">
-                    <img class="dept_img" class="column large12 medium12 small12"  src="./static/dept_img/pediatrics.jpg"/>
-                    <h5 class="ta_center">Pediatrics</h5>
-                </div></a>
-            </div>
 
         </div>
     
@@ -105,17 +102,16 @@
 
     <div class="sidepanel_container" id="side1">
         <div class="sidepanel_content zi3 right" id="modct1">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
-            <br /><br /><br /><br />
             <div class="page_container">
                 <a href="./index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
                 <a href="./aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
                 <a href="./departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
                 <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
             </div>
+            <button class="primary_red right mod_close_btn" style="height: 40px;" onclick="closeside1();">X</button>
             <div class="bottom">
                 <hr>
-                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; S.N.R. Hospital, Kolar 2020</p>
             </div>
         </div>
     </div>
