@@ -10,6 +10,9 @@
     <link href="node_modules/fdweb/fluent.css" type="text/css" rel="stylesheet"/>
     <link href="node_modules/fdweb/fluent-icons.css" type="text/css" rel="stylesheet"/>
     <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body onload="PageLoad();">
     <div id="body" style="filter: blur(25px);">
@@ -22,7 +25,7 @@
             <a class="pivot_button right" href="../index.html">Home</a>
         </div>
         <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
-            <img class="left icon" src="./static/icons/fb.png">
+            <img class="left icon" src="./static/icons/logo.png">
 
             <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
         </div>
@@ -138,17 +141,16 @@
 
     <div class="sidepanel_container" id="side1">
         <div class="sidepanel_content zi3 right" id="modct1">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
-            <br /><br /><br /><br />
             <div class="page_container">
-                <a href="../index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
-                <a href="../aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
-                <a href="../departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
+                <a href="./index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
+                <a href="./aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                <a href="./departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
                 <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
             </div>
+            <button class="primary_red right mod_close_btn" style="height: 40px;" onclick="closeside1();">X</button>
             <div class="bottom">
                 <hr>
-                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; S.N.R. Hospital, Kolar 2020</p>
             </div>
         </div>
     </div>

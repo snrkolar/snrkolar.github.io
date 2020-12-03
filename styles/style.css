@@ -127,3 +127,14 @@ h6{font-size: 3vh;}
     text-align: center;
     font-size: 10vh;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*, p, pre, a{
+    font-family: 'Roboto', "Calibri", "Helvetica Neue";
+    font-weight: 300;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Barlow', "Segoe UI", "San Francisco";    
+}
