@@ -120,3 +120,10 @@ h3{font-size: 4.2vh;}
 h4{font-size: 4vh;}
 h5{font-size: 3.5vh;}
 h6{font-size: 3vh;}
+
+.fac_info h1{
+    position: relative;
+    top: 8vh;
+    text-align: center;
+    font-size: 10vh;
+}

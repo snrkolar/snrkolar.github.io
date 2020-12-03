@@ -1,0 +1,122 @@
+html{
+    scroll-behavior: smooth;
+}
+.services_card{
+    padding: 0px;
+    width: 88%;
+    display: block;
+    margin: auto;
+}
+
+.dept_content p{
+    font-family: 18px;
+}
+.facility_panel, .dept_cont{
+    text-align: justify;
+}
+.facility_panel h6{text-align: center;}
+.facility_image{
+    margin: 0px;
+}
+.cont{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.top{
+    text-decoration: none;
+}
+.top:hover::before{
+    width: 0%;
+}
+
+.fac_info{
+    padding: 6vh 12.5vh;
+}
+.fac_info p{
+    text-align: justify;
+}
+
+
+
+@media (min-width: 481px){
+    .facility_panel{
+        width: 80%;
+        position: relative;
+        top: 10vh;
+    }
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0px;
+}
+a{text-decoration: none;}
+
+a .breadcrumb:hover:before{width: 0%;}
+
+.dept_nav{
+    border-top: 10px double #FF9900;
+    width: 90%;
+    float: right;
+    overflow-y: visible;
+    vertical-align: top;
+    position: sticky;
+    top: 80px;
+}
+.dept_cont{
+    width: 80%;
+    float: left;
+    text-align: justify;
+    display: table-cell;
+    vertical-align: top;
+    margin: 12px 8px;
+}
+.dept_cont h5{
+    background: #9eaeae;
+    color: #fcfcfc;
+    width: 100%;
+    padding: 10px 0px;
+    position: relative;
+    top: 10px;
+}
+
+.facility_panel .newli{
+    background: transparent;
+    display: block;
+    padding: 6px;
+}
+.scheme{font-size: 24px;}
+
+.facility_panel li{font-size: 20px;}
+li{margin-left: -10%;}
+
+.hidden{display: none;}
+
+.pivot_container .icon{
+    margin: 8px 12px;
+}
+
+.name_wrap{
+    background: #ccccccdd;
+    width: 50vw;
+    display: block;
+    margin: 32vh auto;
+    padding: 26px 16px;
+    backdrop-filter: blur(6px) saturate(100%);
+    border-radius: 12px;
+    box-shadow: 6px 6px 18px #acacacaa, -6px -6px 18px #acacacaa;
+    color: #1e1e1e;
+}
+
+@media (max-width: 481px){
+    .name_wrap{
+        width: 80vw;
+    }
+}
+
+h1{font-size: 6vh;}
+h2{font-size: 5vh;}
+h3{font-size: 4.2vh;}
+h4{font-size: 4vh;}
+h5{font-size: 3.5vh;}
+h6{font-size: 3vh;}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/SmoothScroll.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.N.R. District Hospital, Kolar</title>
+    <link href="../node_modules/fdweb/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="../node_modules/fdweb/fluent.css" type="text/css" rel="stylesheet"/>
+    <link href="../node_modules/fdweb/fluent-icons.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body onload="PageLoad();">
+    <div id="body" style="filter: blur(25px);">
+        <div class="column large12 medium12 small0 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
+            <img class="left icon" src="../static/icons/logo.png">
+
+            <a class="pivot_button right" href="#footer">Contact</a>
+            <a class="pivot_button right" href="../departments.html">Departments</a>
+            <a class="pivot_button right" href="../aboutus.html">About</a>
+            <a class="pivot_button right" href="../index.html">Home</a>
+        </div>
+        <div class="column large0 medium0 small12 pivot_container primary_blue" style="padding: 4px; position: sticky; top: 0px">
+            <img class="left icon" src="./static/icons/fb.png">
+
+            <button class="transparent right" onclick="openside1()"><i style="color: #FFF;" class="ms-Icon ms-Icon--GlobalNavButton"></i></button>
+        </div>
+
+        <span id="top"></span>
+        <div class="column large12 medium12 small12" style="background: url('../static/images/HomePage3.jpg'); width: 100%; height: 60vh; background-attachment: fixed; background-size: cover;">
+            <div class="name_wrap">
+                <h2 class="ta_center">About Us</h2>
+            </div>
+        </div>
+
+        <div class="page_container">
+
+            <div class="department">
+                <div class="column large4 medium4 small0">
+                    <br /><br /><br />
+                    <br />
+                    <div class="dept_nav">
+                        <a href="#history"><div class="large12 panel_item" onclick="closeside1();">History</div></a>
+                        <a href="#about"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                        <a href="#vandm"><div class="large12 panel_item" onclick="closeside1();">Vision and Mission</div></a>
+                        <a href="#history"><div class="large12 panel_item" onclick="closeside1();">Our History</div></a>
+
+                    </div>
+                </div>
+                <div class="column large8 medium8 small12">
+                    <div class="dept_cont">
+                        <p id="history"></p>
+                        <br /><br /><br />
+                        <h6>History</h6>
+                        <p>
+
+                            <br/>
+                            The Department of Psychiatry has been part of SNR District hospital Kolar for the past 20 years.  The department has been actively involved in clinical care, research and community work.<br/>
+                            Professionals from Psychology and Psychiatric Social Work are involved in management of each patient, so that the care provided is holistic. Treatment approaches used are according to the standard guidelines. <br/>
+
+                            Key Features <br/>
+
+                            •	Involved in treating patients with mental health problems and also liaises with other departments of the hospital in managing psychological issues in medically ill.<br/>
+                            •	The faculty in the department are experienced and involved in imparting skills, knowledge and dedicated to patient care.<br/>
+                            •	Faculty are actively involved in research<br/>
+                            About Psychiatry<br/> 
+                            Psychiatry is the medical specialty devoted to the study, diagnosis, treatment, and prevention of mental disorders. These include various affective, behavioural, cognitive and perceptual abnormalities.<br/>
+                            Human body and mind are interrelated, and illness of body affects the mind and vice versa. There can be no health without a healthy mind. The combined treatment of psychoactive medication and psychotherapy has become the most common mode of psychiatric treatment in current practice, but current practice also includes widely ranging variety of other modalities. While the focus of psychiatry has changed little over time, the diagnostic and treatment processes have evolved dramatically and continue to do so. Over the years the field of psychiatry has evolved and has become less conceptually isolated from other fields of medicine.<br/>
+                             
+
+                        </p>
+                       
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <p  id="footer"></p>
+        <div class="footer primary_blue ta_center">
+            <div class="column large4 medium6 small12 page_container ta_left">
+                <h5>Get In Touch</h5><br />
+                <p><a href="#" class="cont">S.N.R. Hospital, Gowripete, Kolar, Karnataka 563101, India</a></p>
+                <p><a href="tel: " class="cont">Phone Number Goes Here</a></p>
+                <p><a href="mailto: hospitalsnr@gmail.com" class="cont">hospitalsnr@gmail.com</a></p>
+                <a href="https://www.facebook.com/"><img src="../static/icons/fb.png" class="icon"></a>
+                <a href="https://www.instagram.com/"><img src="../static/icons/ig.png" class="icon"></a>
+                <a href="https://youtu.be/"><img src="../static/icons/tw.png" class="icon"></a>
+            </div>
+            <div class="column large4 medium6 small12 page_container">
+                
+                <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=S.N.R%20Hospital%2C%20Gowripete%2C%20Kolar%2C%20Karnataka+(SNR%20District%20Hospital%2C%20Kolar)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="border: none; border-radius:10px; height: 25vh; width: 100%;" allowfullscreen="yes" class="zi3"></iframe>
+                 
+            </div>
+            <br /></br>
+            <a href="#top" class="top"><button class="frost_container primary_inverted" onmouseover="frosting();">
+                <span class="frost">Back to Top</span>
+            </button></a>
+            <br /><hr class="small0">
+            <p class="ta_left small0">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            <br />
+        </div> 
+        
+    </div>
+
+    <div class="sidepanel_container" id="side1">
+        <div class="sidepanel_content zi3 right" id="modct1">
+            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button>
+            <br /><br /><br /><br />
+            <div class="page_container">
+                <a href="../index.html"><div class="large12 panel_item" onclick="closeside1();">Home</div></a>
+                <a href="../aboutus.html"><div class="large12 panel_item" onclick="closeside1();">About Us</div></a>
+                <a href="../departments.html"><div class="large12 panel_item" onclick="closeside1();">Departments</div></a>
+                <a href="#footer"><div class="large12 panel_item" onclick="closeside1();">Contact</div></a>
+            </div>
+            <div class="bottom">
+                <hr>
+                <p class="ta_left">&nbsp;&nbsp;&nbsp;&nbsp;&copy; to S.N.R. Hospital, Kolar 2020</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loadScreen" class="modal_container" style="display: block; background: #2e2e2eee;">
+        <div class="page_container">
+            <div class="indeterminate_progress_bar" style="position: fixed; top: 50%; width: 50%; margin-left: 15%;"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+<script src="../node_modules/fdweb/fluent.js"></script>
+<script src="../scripts/loadPage.js"></script>
