@@ -849,10 +849,10 @@ th:hover{opacity: 0.8;}
 
 .dialogue_box{
     z-index: 12;
-    position: fixed;
-    top:40%;
+    position: relative;
+    top:-40vh;
     left: 40%;
-    min-width: 350px;
+    width: 350px;
     min-height: 150px;
     border:2px solid rgba(125, 125, 125, 0.9);
     display: none;
